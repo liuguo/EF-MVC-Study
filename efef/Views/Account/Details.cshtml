@@ -1,0 +1,66 @@
+﻿
+@{
+    Layout = null;
+}
+@model efef.Models.SysUser
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div> 
+        <dl>
+            <dt>
+                @Html.DisplayNameFor(model => model.UserName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>@Html.DisplayNameFor(model=>model.SysUserRoles)</dt>
+
+            <dd>
+                <table>
+                    <tr>
+                        <th>
+                            RoleName
+                        </th>
+                        <th>
+                            RoleDesc
+                        </th>
+                        @foreach (var item in Model.SysUserRoles)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelitem=>item.SysRole.RoleName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelitem => item.SysRole.RoleDesc)
+                                </td>
+                            </tr>
+                        }
+                    </tr>
+                </table>
+            </dd>
+
+
+
+
+
+
+
+
+        </dl>
+    </div>
+</body>
+</html>
