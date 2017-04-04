@@ -13,6 +13,7 @@ namespace efef.Controllers
     public class AccountController : Controller
     {
         private AccountContext db = new AccountContext();
+        public static int TotalPage = 10;
         // GET: Account
         /// <summary>
         /// 获取列表
@@ -20,8 +21,34 @@ namespace efef.Controllers
         /// <returns></returns>
         public ActionResult Index()
         {
-            return View(db.SysUsers);
+            ViewBag.PageIndex = 1;
+            ViewBag.Total = 20;
+            ViewBag.TotalPage = TotalPage;
+            int pageSize = 5;
+            int i = 1;
+            var user = db.SysUsers.OrderBy(u => u.UserName).Skip((i - 1) * pageSize).Take(5);
+            return View(user);
         }
+
+        /// <summary>
+        /// 分页数据
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
+        public ActionResult fenye(int i)
+        {
+            if (i > TotalPage || i < 1)
+            {
+                i = 1;
+            }
+            ViewBag.PageIndex = i;
+            ViewBag.Total = 20;
+            ViewBag.TotalPage = TotalPage;
+            int pageSize = 5;
+            var user = db.SysUsers.OrderBy(u => u.UserName).Skip((i - 1) * pageSize).Take(5);
+            return View("Index", user);
+        }
+
 
         /// <summary>
         /// login
