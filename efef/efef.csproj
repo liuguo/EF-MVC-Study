@@ -101,6 +101,7 @@
     <Content Include="App_Data\MvcDemo_log.ldf">
       <DependentUpon>MvcDemo.mdf</DependentUpon>
     </Content>
+    <Content Include="Boostrop\production\images\bitbug_favicon.ico" />
     <Content Include="build\css\custom.css" />
     <Content Include="build\css\custom.min.css" />
     <Content Include="build\images\back_disabled.png" />
@@ -192,6 +193,15 @@
     <Content Include="Boostrop\production\xx.html" />
     <Content Include="Boostrop\src\js\custom.js" />
     <Content Include="Boostrop\src\js\helpers\smartresize.js" />
+    <Content Include="Scrript\bootstrap.js" />
+    <Content Include="Scrript\bootstrap.min.js" />
+    <None Include="Scrript\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scrript\jquery-1.10.2.js" />
+    <Content Include="Scrript\jquery-1.10.2.min.js" />
+    <Content Include="Scrript\modernizr-2.6.2.js" />
+    <Content Include="Scrript\respond.js" />
+    <Content Include="Scrript\respond.min.js" />
+    <None Include="Scrript\_references.js" />
     <Content Include="vendors\animate.css\animate.css" />
     <Content Include="vendors\animate.css\animate.min.css" />
     <Content Include="vendors\animate.css\gulpfile.js" />
@@ -4446,6 +4456,8 @@
     <Content Include="Boostrop\documentation\fonts\scss\_variables.scss" />
     <Content Include="Boostrop\documentation\images\Thumbs.db" />
     <Content Include="build\images\Thumbs.db" />
+    <Content Include="Views\Shared\_Partialwidget.cshtml" />
+    <Content Include="Scrript\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

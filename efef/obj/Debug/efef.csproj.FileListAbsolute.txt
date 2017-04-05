@@ -28,7 +28,6 @@ F:\test\efef\efef\bin\System.Web.Webpages.Deployment.xml
 F:\test\efef\efef\bin\System.Web.Webpages.Razor.xml
 F:\test\efef\efef\bin\System.Web.Helpers.xml
 F:\test\efef\efef\bin\System.Web.Mvc.xml
-F:\test\efef\efef\obj\Debug\efef.csprojResolveAssemblyReference.cache
 F:\test\efef\efef\obj\Debug\efef.dll
 F:\test\efef\efef\obj\Debug\efef.pdb
 F:\test\efef\efef\bin\EntityFramework.dll
